@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Intramurals Sign Up</title>
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Georgia, serif;
+    background:
+        linear-gradient(rgba(15,12,9,0.9), rgba(15,12,9,0.9)),
+        url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e8dcc8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20,15,10,0.95);
+    padding: 18px 50px;
+    border-bottom: 1px solid #c6a75e;
+}
+
+.logo {
+    color: #f5f1e8;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e8dcc8;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c6a75e;
+}
+
+.INTRAMS {
+    background: #2a1f18;
+    border: 1px solid #3b2a21;
+    border-left: 5px solid #c6a75e;
+    border-radius: 14px;
+    padding: 30px;
+    width: 520px;
+    margin: 30px auto;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+#input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #5a4a3f;
+    background-color: #1f1813;
+    color: #f5f0e1;
+}
+
+#button {
+    background: #3b2a21;
+    border: 1px solid #c6a75e;
+    padding: 12px 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #e8dcc8;
+    transition: 0.3s;
+}
+
+#button:hover {
+    background: #c6a75e;
+    color: #1b1410;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">YourAcademiaSite.com</div>
+    <ul class="nav-links">
+        <li><a href="index1.html">Sign Up Page</a></li>
+        <li><a href="index2.html">Team Checker</a></li>
+        <li><a href="index3.html">List of Players</a></li>
+    </ul>
+</nav>
+
+<div class="INTRAMS">
+    <h1>Intramurals Sign Up</h1>
+</div>
+<br>
+<div class="INTRAMS">
+    <h2>Create Account</h2>
+    <label>Username:</label><br>
+    <input type="text" id="username"><br><br>
+    <label>Password:</label><br>
+    <input type="password" id="password"><br><br>
+    <button py-click="signupbtn">Sign Up</button>
+</div>
+<br><br>
+<b>
+<div class="INTRAMS">
+    <div id="output"></div>
+</div>
+</b>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>

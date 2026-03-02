@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Intramurals List of Players</title>
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+<style>
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: Georgia, serif;
+    background:
+        linear-gradient(rgba(15,12,9,0.9), rgba(15,12,9,0.9)),
+        url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e8dcc8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20,15,10,0.95);
+    padding: 18px 50px;
+    border-bottom: 1px solid #c6a75e;
+}
+
+.logo {
+    color: #f5f1e8;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e8dcc8;
+}
+
+.nav-links a:hover {
+    color: #c6a75e;
+}
+
+#entirety {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #2a1f18;
+    border: 1px solid #3b2a21;
+    border-left: 5px solid #c6a75e;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+}
+
+button {
+    background: #3b2a21;
+    border: 1px solid #c6a75e;
+    padding: 12px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #e8dcc8;
+    text-align:center;
+}
+
+button:hover {
+    background: #c6a75e;
+    color: #1b1410;
+}
+
+#players li {
+    border-bottom: 1px solid rgba(198,167,94,0.3);
+    padding: 8px 0;
+}
+.center-btn {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">YourAcademiaSite.com</div>
+    <ul class="nav-links">
+        <li><a href="index1.html">Sign Up Page</a></li>
+        <li><a href="index2.html">Team Checker</a></li>
+        <li><a href="index3.html">List of Players</a></li>
+    </ul>
+</nav>
+
+<div id="entirety"> <!-- div for the styling of the entire list -->
+<h1 style="text-align:center;">List of Team Players</h1>
+<button py-click="show_players" class="center-btn">Show Players</button> <!-- button to click to show loop of players -->
+<ul id="players"></ul>
+
+<py-script src="main.py"></py-script>
+</div>
+</body>
+</html>
